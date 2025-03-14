@@ -7,7 +7,6 @@ import com.iimmersao.mysql_sakila_demo_server.respositories.ActorRepository;
 import com.iimmersao.mysql_sakila_demo_server.respositories.FilmActorRepository;
 import com.iimmersao.mysql_sakila_demo_server.respositories.FilmRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
@@ -15,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@Controller
+@RestController
 @RequestMapping(path="/actor")
 public class ActorController {
     @Autowired
